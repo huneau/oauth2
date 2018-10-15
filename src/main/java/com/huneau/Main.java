@@ -1,5 +1,6 @@
 package com.huneau;
 
+import com.huneau.resources.OauthResources;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.util.HtmlHelper;
 import org.glassfish.grizzly.http.util.HttpStatus;

@@ -6,9 +6,9 @@ import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 @Provider
-public class DefaultException implements ExceptionMapper<Exception> {
+public class DefaultException implements ExceptionMapper<Throwable> {
 	@Override
-	public Response toResponse(Exception exception) {
+	public Response toResponse(Throwable exception) {
 		throw new WebApplicationException(exception.getMessage());
 	}
 }
